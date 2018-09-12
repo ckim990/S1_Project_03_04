@@ -1,0 +1,179 @@
+﻿@charset "utf-8";
+
+/* The font face elements for the cursive and dobkin fonts. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Christopher Kim
+   Date:   9.09.18
+   
+   Filename: lake_styles.css
+*/
+
+/* Style selectors */
+/* I learned and utilized gradient features. */
+html {
+    background: #003973;
+background: -webkit-linear-gradient(to right, rgba(255, 138, 60, 0.644), #003a739d); 
+background: linear-gradient(to right, rgba(252, 95, 22, 0.664), #003a73bd); 
+}
+
+
+body {
+    /* Sets the background color for the body. */
+    background-color: peachpuff;
+}
+
+section#rightcol {
+    background-color: coral;
+    padding-bottom: 10.5em;
+}
+
+/* The styling for the h1 within the section#leftcol nested. */
+section#leftcol>h1 {
+    font-family: Champagne;
+    font-size: 3.7em;
+    padding-left: 5px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(119, 97, 77)
+}
+
+/* The paragraph of the section#leftcol. (id of leftcol) */
+section#leftcol>p {
+    padding-left: 10px;
+    text-indent: 0.8em;
+    color: rgb(119, 97, 77);
+}
+
+/* Gets the first aside in the page. */
+aside:first-of-type {
+    background-color: coral;
+    line-height: 1.5em;
+    color: rgb(190, 0, 0);
+}
+
+/* The last aside element in the page. */
+aside:last-of-type {
+    background-color: rgba(52, 140, 255, 0.658);
+    padding-left: 5px;
+    color:rgb(0, 101, 196);
+}
+
+/* The last h2 in the page. */
+aside:last-of-type h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+    color:rgb(0, 101, 196);
+}
+
+aside:last-of-type p {
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+aside h1 {
+    /* Aligns the text in the center.  */
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* All h2 elements in the section with the id of rightcol */
+section#rightcol h2 {
+    text-indent: 0.9em;
+    font-family: Dobkin;
+    font-size: 2em;
+    color: rgb(190, 0, 0)
+}
+
+/* Navigation Selectors */
+
+/* Nav bar decorations */
+header > nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+/* All visited and unvisited a elements nested within a nav that is directly nested in a header. */
+header > nav a:link,
+header > nav a:visited {
+    background-color: rgba(52, 140, 255, 0.658);
+}
+
+/* All hover and active a elements nested within a nav that is directly nested in a header. */
+header > nav a:hover,
+header > nav a:active {
+    background-color: rgb(0, 132, 255);
+}
+
+section#rightcol nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+section#rightcol nav ul li {
+    text-align: left;
+}
+
+section#rightcol nav ul a {
+    text-decoration: none;
+}
+
+section#rightcol nav ul a:link,
+section#rightcol nav ul a:visited {
+    color: rgb(255, 17, 0);
+}
+
+section#rightcol nav ul a:hover,
+section#rightcol nav ul a:active {
+    color: rgb(190, 0, 0);
+}
+
+/* All blockquotes */
+blockquote {
+    padding-top: 20px;
+    color: rgb(190, 0, 0);
+    quotes: "\201C""\201D";
+    font-size: 0.95em;
+    line-height: 1.3em;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 1.9em;
+}
+
+/* After the text ends in the blockquote. */
+blockquote::after {
+    /* Inserts in a close quote. */
+    content: close-quote;
+    font-size: 1.8em;
+}
+
+/* Footer Styles */
+
+/* The footer of the page. */
+footer {
+    background-color: rgba(0, 132, 255, 0.452);
+    text-align: center;
+    color: rgb(0, 101, 196);
+}
