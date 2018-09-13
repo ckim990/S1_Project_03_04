@@ -29,8 +29,8 @@
 /* I learned and utilized gradient features. */
 html {
     background: #003973;
-background: -webkit-linear-gradient(to right, rgba(255, 138, 60, 0.644), #003a739d); 
-background: linear-gradient(to right, rgba(252, 95, 22, 0.664), #003a73bd); 
+    background: -webkit-linear-gradient(to right, rgba(255, 138, 60, 0.644), #003a739d);
+    background: linear-gradient(to right, rgba(252, 95, 22, 0.664), #003a73bd);
 }
 
 
@@ -39,13 +39,19 @@ body {
     background-color: peachpuff;
 }
 
+:aside-link {
+    text-decoration: none;
+    color: rgb(151, 0, 0)
+}
+
 section#rightcol {
-    background-color: coral;
-    padding-bottom: 10.5em;
+    background-color: lightcoral;
+    padding-bottom: 11em;
+    
 }
 
 /* The styling for the h1 within the section#leftcol nested. */
-section#leftcol>h1 {
+section#leftcol > h1 {
     font-family: Champagne;
     font-size: 3.7em;
     padding-left: 5px;
@@ -56,7 +62,7 @@ section#leftcol>h1 {
 }
 
 /* The paragraph of the section#leftcol. (id of leftcol) */
-section#leftcol>p {
+section#leftcol > p {
     padding-left: 10px;
     text-indent: 0.8em;
     color: rgb(119, 97, 77);
@@ -64,7 +70,7 @@ section#leftcol>p {
 
 /* Gets the first aside in the page. */
 aside:first-of-type {
-    background-color: coral;
+    background-color: lightcoral;
     line-height: 1.5em;
     color: rgb(190, 0, 0);
 }
@@ -73,14 +79,14 @@ aside:first-of-type {
 aside:last-of-type {
     background-color: rgba(52, 140, 255, 0.658);
     padding-left: 5px;
-    color:rgb(0, 101, 196);
+    color: rgb(0, 101, 196);
 }
 
 /* The last h2 in the page. */
 aside:last-of-type h2 {
     font-weight: normal;
     font-size: 1.1em;
-    color:rgb(0, 101, 196);
+    color: rgb(0, 101, 196);
 }
 
 aside:last-of-type p {
@@ -89,12 +95,12 @@ aside:last-of-type p {
 }
 
 aside h1 {
-    /* Aligns the text in the center.  */
+    /* Aligns text to the center.  */
     text-align: center;
     font-size: 1.3em;
 }
 
-/* All h2 elements in the section with the id of rightcol */
+/* the h2 elements that have the id rightcol have been changed. */
 section#rightcol h2 {
     text-indent: 0.9em;
     font-family: Dobkin;
@@ -113,13 +119,13 @@ header > nav a {
 
 }
 
-/* All visited and unvisited a elements nested within a nav that is directly nested in a header. */
+/* Changed the background color. */
 header > nav a:link,
 header > nav a:visited {
     background-color: rgba(52, 140, 255, 0.658);
 }
 
-/* All hover and active a elements nested within a nav that is directly nested in a header. */
+/* All hover and active a elements nested within a nav that is directly nested in a header have had the text decorations. */
 header > nav a:hover,
 header > nav a:active {
     background-color: rgb(0, 132, 255);
@@ -140,7 +146,7 @@ section#rightcol nav ul a {
 
 section#rightcol nav ul a:link,
 section#rightcol nav ul a:visited {
-    color: rgb(255, 17, 0);
+    color: rgb(119, 97, 77);
 }
 
 section#rightcol nav ul a:hover,
@@ -148,11 +154,11 @@ section#rightcol nav ul a:active {
     color: rgb(190, 0, 0);
 }
 
-/* All blockquotes */
+/* blockquotes have been changed in color font size and line height. */
 blockquote {
     padding-top: 20px;
     color: rgb(190, 0, 0);
-    quotes: "\201C""\201D";
+    
     font-size: 0.95em;
     line-height: 1.3em;
 }
@@ -164,14 +170,12 @@ blockquote::before {
 
 /* After the text ends in the blockquote. */
 blockquote::after {
-    /* Inserts in a close quote. */
     content: close-quote;
-    font-size: 1.8em;
+    font-size: 1.9em;
 }
-
 /* Footer Styles */
 
-/* The footer of the page. */
+/* The footer of the page has been altered in color and so has its text. */
 footer {
     background-color: rgba(0, 132, 255, 0.452);
     text-align: center;

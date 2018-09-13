@@ -118,4 +118,6 @@ section#leftcol aside {
 section#leftcol img {
 	width: 100%;
 	display: block;
+	border: 5px;
+	border-color: blue
 }
